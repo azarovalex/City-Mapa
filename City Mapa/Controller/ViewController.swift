@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MapVC.swift
 //  City Mapa
 //
 //  Created by Alex Azarov on 3/2/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MapVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -12,6 +12,7 @@
 		EC349C382048A829005D7751 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC349C362048A829005D7751 /* Main.storyboard */; };
 		EC349C3A2048A82B005D7751 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC349C392048A82B005D7751 /* Assets.xcassets */; };
 		EC349C3D2048A82B005D7751 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC349C3B2048A82B005D7751 /* LaunchScreen.storyboard */; };
+		EC349C492048A8FD005D7751 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC349C482048A8FD005D7751 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		EC349C392048A82B005D7751 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC349C3C2048A82B005D7751 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC349C3E2048A82B005D7751 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC349C482048A8FD005D7751 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,47 @@
 		EC349C312048A829005D7751 /* City Mapa */ = {
 			isa = PBXGroup;
 			children = (
+				EC349C472048A8F0005D7751 /* Utilities */,
+				EC349C462048A8D2005D7751 /* Extentions */,
+				EC349C452048A8CD005D7751 /* View */,
+				EC349C442048A8BE005D7751 /* Controller */,
 				EC349C322048A829005D7751 /* AppDelegate.swift */,
-				EC349C342048A829005D7751 /* ViewController.swift */,
 				EC349C362048A829005D7751 /* Main.storyboard */,
 				EC349C392048A82B005D7751 /* Assets.xcassets */,
 				EC349C3B2048A82B005D7751 /* LaunchScreen.storyboard */,
 				EC349C3E2048A82B005D7751 /* Info.plist */,
 			);
 			path = "City Mapa";
+			sourceTree = "<group>";
+		};
+		EC349C442048A8BE005D7751 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EC349C342048A829005D7751 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EC349C452048A8CD005D7751 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EC349C462048A8D2005D7751 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		EC349C472048A8F0005D7751 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				EC349C482048A8FD005D7751 /* Constants.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +172,7 @@
 			files = (
 				EC349C352048A829005D7751 /* ViewController.swift in Sources */,
 				EC349C332048A829005D7751 /* AppDelegate.swift in Sources */,
+				EC349C492048A8FD005D7751 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
