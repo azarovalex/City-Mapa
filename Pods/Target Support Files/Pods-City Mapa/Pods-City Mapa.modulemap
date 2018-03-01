@@ -1,0 +1,6 @@
+framework module Pods_City_Mapa {
+  umbrella header "Pods-City Mapa-umbrella.h"
+
+  export *
+  module * { export * }
+}

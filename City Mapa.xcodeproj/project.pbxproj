@@ -7,21 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C5534D6A97ECE787E33DFF60 /* Pods_City_Mapa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEBFB1FEDA959F5EFB96C24C /* Pods_City_Mapa.framework */; };
 		EC349C332048A829005D7751 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC349C322048A829005D7751 /* AppDelegate.swift */; };
-		EC349C352048A829005D7751 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC349C342048A829005D7751 /* ViewController.swift */; };
+		EC349C352048A829005D7751 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC349C342048A829005D7751 /* MapVC.swift */; };
 		EC349C382048A829005D7751 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC349C362048A829005D7751 /* Main.storyboard */; };
 		EC349C3A2048A82B005D7751 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC349C392048A82B005D7751 /* Assets.xcassets */; };
 		EC349C3D2048A82B005D7751 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC349C3B2048A82B005D7751 /* LaunchScreen.storyboard */; };
+		EC349C492048A8FD005D7751 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC349C482048A8FD005D7751 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		11574F889A8EADF159BE3BA2 /* Pods-City Mapa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-City Mapa.release.xcconfig"; path = "Pods/Target Support Files/Pods-City Mapa/Pods-City Mapa.release.xcconfig"; sourceTree = "<group>"; };
+		355AC659E8F7240D8B322962 /* Pods-City Mapa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-City Mapa.debug.xcconfig"; path = "Pods/Target Support Files/Pods-City Mapa/Pods-City Mapa.debug.xcconfig"; sourceTree = "<group>"; };
+		BEBFB1FEDA959F5EFB96C24C /* Pods_City_Mapa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_City_Mapa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC349C2F2048A829005D7751 /* City Mapa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "City Mapa.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC349C322048A829005D7751 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EC349C342048A829005D7751 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EC349C342048A829005D7751 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
 		EC349C372048A829005D7751 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EC349C392048A82B005D7751 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC349C3C2048A82B005D7751 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC349C3E2048A82B005D7751 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC349C482048A8FD005D7751 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5534D6A97ECE787E33DFF60 /* Pods_City_Mapa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0078FF0B28BF16919523DBC3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BEBFB1FEDA959F5EFB96C24C /* Pods_City_Mapa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5C49686D31B48F08076062D2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				355AC659E8F7240D8B322962 /* Pods-City Mapa.debug.xcconfig */,
+				11574F889A8EADF159BE3BA2 /* Pods-City Mapa.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		EC349C262048A829005D7751 = {
 			isa = PBXGroup;
 			children = (
 				EC349C312048A829005D7751 /* City Mapa */,
 				EC349C302048A829005D7751 /* Products */,
+				5C49686D31B48F08076062D2 /* Pods */,
+				0078FF0B28BF16919523DBC3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +80,47 @@
 		EC349C312048A829005D7751 /* City Mapa */ = {
 			isa = PBXGroup;
 			children = (
+				EC349C472048A8F0005D7751 /* Utilities */,
+				EC349C462048A8D2005D7751 /* Extentions */,
+				EC349C452048A8CD005D7751 /* View */,
+				EC349C442048A8BE005D7751 /* Controller */,
 				EC349C322048A829005D7751 /* AppDelegate.swift */,
-				EC349C342048A829005D7751 /* ViewController.swift */,
 				EC349C362048A829005D7751 /* Main.storyboard */,
 				EC349C392048A82B005D7751 /* Assets.xcassets */,
 				EC349C3B2048A82B005D7751 /* LaunchScreen.storyboard */,
 				EC349C3E2048A82B005D7751 /* Info.plist */,
 			);
 			path = "City Mapa";
+			sourceTree = "<group>";
+		};
+		EC349C442048A8BE005D7751 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EC349C342048A829005D7751 /* MapVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EC349C452048A8CD005D7751 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EC349C462048A8D2005D7751 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		EC349C472048A8F0005D7751 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				EC349C482048A8FD005D7751 /* Constants.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +130,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EC349C412048A82B005D7751 /* Build configuration list for PBXNativeTarget "City Mapa" */;
 			buildPhases = (
+				9F3AC224760428E1D928D7F3 /* [CP] Check Pods Manifest.lock */,
 				EC349C2B2048A829005D7751 /* Sources */,
 				EC349C2C2048A829005D7751 /* Frameworks */,
 				EC349C2D2048A829005D7751 /* Resources */,
+				F8FA9AF9B21CBDC8E2668673 /* [CP] Embed Pods Frameworks */,
+				BE0768C27D484BCCE095B57C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,13 +192,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9F3AC224760428E1D928D7F3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-City Mapa-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE0768C27D484BCCE095B57C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-City Mapa/Pods-City Mapa-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8FA9AF9B21CBDC8E2668673 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-City Mapa/Pods-City Mapa-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-City Mapa/Pods-City Mapa-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EC349C2B2048A829005D7751 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC349C352048A829005D7751 /* ViewController.swift in Sources */,
+				EC349C352048A829005D7751 /* MapVC.swift in Sources */,
 				EC349C332048A829005D7751 /* AppDelegate.swift in Sources */,
+				EC349C492048A8FD005D7751 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,15 +397,13 @@
 		};
 		EC349C422048A82B005D7751 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 355AC659E8F7240D8B322962 /* Pods-City Mapa.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CLALR9F4Q5;
 				INFOPLIST_FILE = "City Mapa/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "by.azarov.City-Mapa";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -296,15 +413,13 @@
 		};
 		EC349C432048A82B005D7751 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11574F889A8EADF159BE3BA2 /* Pods-City Mapa.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CLALR9F4Q5;
 				INFOPLIST_FILE = "City Mapa/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "by.azarov.City-Mapa";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
