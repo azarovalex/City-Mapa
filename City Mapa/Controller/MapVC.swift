@@ -9,6 +9,8 @@
 import UIKit
 import MapKit
 import CoreLocation
+import Alamofire
+import AlamofireImage
 
 class MapVC: UIViewController, UIGestureRecognizerDelegate {
 
@@ -25,6 +27,7 @@ class MapVC: UIViewController, UIGestureRecognizerDelegate {
     var progressLbl: UILabel?
     var collectionView: UICollectionView?
     var flowLayout = UICollectionViewLayout()
+    var imageUrlArray = Array<String>()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -135,15 +138,33 @@ extension MapVC: MKMapViewDelegate {
         let annotation = DroppablePin(coordinate: touchCoordinate, identifier: "droppablePin")
         mapView.addAnnotation(annotation)
         
-        print(getFlickrUrl(forApiKey: API_KEY, withAnnotation: annotation, andNumberOfPhotos: 40))
-        
         let coordinateRegion = MKCoordinateRegionMakeWithDistance(touchCoordinate, regionRadius, regionRadius)
         mapView.setRegion(coordinateRegion, animated: true)
+        
+        retrieveUrls(forAnnotation: annotation) { (success) in
+            print(self.imageUrlArray)
+        }
     }
     
     func removeAllPins() {
         for annotation in mapView.annotations {
             mapView.removeAnnotation(annotation)
+        }
+    }
+    
+    func retrieveUrls(forAnnotation annotation: DroppablePin, handler: @escaping (_ status: Bool) -> Void) {
+        imageUrlArray.removeAll()
+        
+        Alamofire.request(getFlickrUrl(forApiKey: API_KEY, withAnnotation: annotation, andNumberOfPhotos: 40)).responseJSON { (response) in
+            guard let json = response.result.value as? [String: Any] else { return }
+            let photosDict = json["photos"] as! [String: Any]
+            let photosDictArray = photosDict["photo"] as! [[String: Any]]
+            
+            for photo in photosDictArray {
+                let postUrl = "https://farm\(photo["farm"]!).staticflickr.com/\(photo["server"]!)/\(photo["id"]!)_\(photo["secret"]!)_h_d.jpg"
+                self.imageUrlArray.append(postUrl)
+            }
+            handler(true)
         }
     }
 }
