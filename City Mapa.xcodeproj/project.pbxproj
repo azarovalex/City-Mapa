@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		C5534D6A97ECE787E33DFF60 /* Pods_City_Mapa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEBFB1FEDA959F5EFB96C24C /* Pods_City_Mapa.framework */; };
+		EC218A72204D37C700EFAC4B /* DroppablePin.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC218A71204D37C700EFAC4B /* DroppablePin.swift */; };
+		EC2A4F0A2050A20B0077A6C4 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2A4F092050A20B0077A6C4 /* PhotoCell.swift */; };
 		EC349C332048A829005D7751 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC349C322048A829005D7751 /* AppDelegate.swift */; };
 		EC349C352048A829005D7751 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC349C342048A829005D7751 /* MapVC.swift */; };
 		EC349C382048A829005D7751 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC349C362048A829005D7751 /* Main.storyboard */; };
@@ -20,6 +22,8 @@
 		11574F889A8EADF159BE3BA2 /* Pods-City Mapa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-City Mapa.release.xcconfig"; path = "Pods/Target Support Files/Pods-City Mapa/Pods-City Mapa.release.xcconfig"; sourceTree = "<group>"; };
 		355AC659E8F7240D8B322962 /* Pods-City Mapa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-City Mapa.debug.xcconfig"; path = "Pods/Target Support Files/Pods-City Mapa/Pods-City Mapa.debug.xcconfig"; sourceTree = "<group>"; };
 		BEBFB1FEDA959F5EFB96C24C /* Pods_City_Mapa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_City_Mapa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC218A71204D37C700EFAC4B /* DroppablePin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroppablePin.swift; sourceTree = "<group>"; };
+		EC2A4F092050A20B0077A6C4 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 		EC349C2F2048A829005D7751 /* City Mapa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "City Mapa.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC349C322048A829005D7751 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC349C342048A829005D7751 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
@@ -104,6 +108,8 @@
 		EC349C452048A8CD005D7751 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EC218A71204D37C700EFAC4B /* DroppablePin.swift */,
+				EC2A4F092050A20B0077A6C4 /* PhotoCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -254,6 +260,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC349C352048A829005D7751 /* MapVC.swift in Sources */,
+				EC2A4F0A2050A20B0077A6C4 /* PhotoCell.swift in Sources */,
+				EC218A72204D37C700EFAC4B /* DroppablePin.swift in Sources */,
 				EC349C332048A829005D7751 /* AppDelegate.swift in Sources */,
 				EC349C492048A8FD005D7751 /* Constants.swift in Sources */,
 			);
