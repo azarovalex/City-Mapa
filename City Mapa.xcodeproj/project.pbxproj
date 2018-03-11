@@ -16,6 +16,7 @@
 		EC349C3A2048A82B005D7751 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC349C392048A82B005D7751 /* Assets.xcassets */; };
 		EC349C3D2048A82B005D7751 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC349C3B2048A82B005D7751 /* LaunchScreen.storyboard */; };
 		EC349C492048A8FD005D7751 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC349C482048A8FD005D7751 /* Constants.swift */; };
+		ECA6B4A620546EB9000EBB1F /* PopVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA6B4A520546EB9000EBB1F /* PopVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		EC349C3C2048A82B005D7751 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC349C3E2048A82B005D7751 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC349C482048A8FD005D7751 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		ECA6B4A520546EB9000EBB1F /* PopVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				EC349C342048A829005D7751 /* MapVC.swift */,
+				ECA6B4A520546EB9000EBB1F /* PopVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECA6B4A620546EB9000EBB1F /* PopVC.swift in Sources */,
 				EC349C352048A829005D7751 /* MapVC.swift in Sources */,
 				EC2A4F0A2050A20B0077A6C4 /* PhotoCell.swift in Sources */,
 				EC218A72204D37C700EFAC4B /* DroppablePin.swift in Sources */,
